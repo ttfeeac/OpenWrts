@@ -15,7 +15,7 @@ env:
   CONFIG_FILE: configs/x86_64.config
   SYS_CONF_SH: configure.sh
   PACKS: package.sh
-  EXTEND_DRIVER: false
+  EXTEND_DRIVER: true
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
