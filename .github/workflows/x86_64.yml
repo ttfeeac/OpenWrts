@@ -25,6 +25,7 @@ jobs:
 
     steps:
     - name: Initialization environment
+      run: |
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /mnt/workdir
         sudo chown $USER:$GROUPS /mnt/workdir
