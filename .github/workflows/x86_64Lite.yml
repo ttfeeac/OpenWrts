@@ -1,6 +1,9 @@
 name: x86_64Lite
 
 on:
+  schedule:
+    # 设置每周一早上6点运行
+    - cron: '0 1 * * 1'
   repository_dispatch:
   workflow_dispatch:
 
@@ -25,9 +28,10 @@ jobs:
 
     steps:
     - name: Initialization environment
-      sudo timedatectl set-timezone "$TZ"
-      sudo mkdir -p /mnt/workdir
-      sudo chown $USER:$GROUPS /mnt/workdir
+      run: |
+        sudo timedatectl set-timezone "$TZ"
+        sudo mkdir -p /mnt/workdir
+        sudo chown $USER:$GROUPS /mnt/workdir
         
     - name: Maximize Build Space
       uses: easimon/maximize-build-space@master
