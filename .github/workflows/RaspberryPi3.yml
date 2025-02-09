@@ -23,9 +23,31 @@ jobs:
   build:
     runs-on: ubuntu-20.04
 
-    steps:
+    steps:     
+    - name: Check Space Usage
+      if: (!cancelled())
+      run: df -hT
+      
+    - name: Maximize Build Space
+      uses: easimon/maximize-build-space@master
+      with:
+        root-reserve-mb: 6144
+        swap-size-mb: 10240
+        remove-dotnet: 'true'
+        remove-android: 'true'
+        remove-haskell: 'true'
+        remove-codeql: 'true'
+        remove-docker-images: 'true'
+        build-mount-path: '/mnt/workdir'
+    
+    - name: Check Space Usage again
+      if: (!cancelled())
+      run: df -hT
+      
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Initialization environment
       env:
@@ -39,23 +61,6 @@ jobs:
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /mnt/workdir
         sudo chown $USER:$GROUPS /mnt/workdir
-    
-    - name: Maximize Build Space
-      uses: easimon/maximize-build-space@master
-      with:
-        root-reserve-mb: 6144
-        swap-size-mb: 10240
-        remove-dotnet: 'true'
-        remove-android: 'true'
-        remove-haskell: 'true'
-        remove-codeql: 'true'
-        remove-docker-images: 'true'
-        build-mount-path: '/mnt/workdir'
-
-    - name: Checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0
     
     - name: Clone source code
       working-directory: /mnt/workdir
