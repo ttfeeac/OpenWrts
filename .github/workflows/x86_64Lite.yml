@@ -2,8 +2,7 @@ name: x86_64Lite
 
 on:
   schedule:
-    # 设置每周一早上6点运行
-    - cron: '0 1 * * 1'
+    - cron: '1 0 * * 1'
   repository_dispatch:
   workflow_dispatch:
 
