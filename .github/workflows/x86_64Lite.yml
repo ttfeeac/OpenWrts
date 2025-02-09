@@ -1,9 +1,6 @@
 name: x86_64Lite
 
 on:
-  #schedule:
-    # 设置每周一早上6点运行
-  #  - cron: '1 0 * * 1'
   repository_dispatch:
   workflow_dispatch:
 
@@ -28,9 +25,9 @@ jobs:
 
     steps:
     - name: Initialization environment
-        sudo timedatectl set-timezone "$TZ"
-        sudo mkdir -p /mnt/workdir
-        sudo chown $USER:$GROUPS /mnt/workdir
+      sudo timedatectl set-timezone "$TZ"
+      sudo mkdir -p /mnt/workdir
+      sudo chown $USER:$GROUPS /mnt/workdir
         
     - name: Maximize Build Space
       uses: easimon/maximize-build-space@master
@@ -69,9 +66,9 @@ jobs:
     - name: Cache
       uses: stupidloud/cachewrtbuild@main
       with:
-          ccache: 'true'
-          mixkey: 'x86'
-          prefix: 'openwrt'
+        ccache: 'true'
+        mixkey: 'x86'
+        prefix: 'openwrt'
 
     - name: Load custom feeds
       run: |
