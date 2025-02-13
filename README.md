@@ -126,17 +126,17 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 - [openwrt/openwrt](https://github.com/openwrt/openwrt)
 
 ## Stargazers over time
-[![Stargazers over time](https://starchart.cc/bigbugcc/OpenWrts.svg)](https://starchart.cc/bigbugcc/OpenWrts)
+[![Stargazers over time](https://starchart.cc/ttfeeac/OpenWrts.svg)](https://starchart.cc/ttfeeac/OpenWrts)
 
 <!-- links -->
-[your-project-path]:https://github.com/bigbugcc/OpenWrts/
-[contributors-shield]: https://img.shields.io/github/contributors/bigbugcc/OpenWrts?style=flat-square
-[contributors-url]: https://github.com/bigbugcc/OpenWrts/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/bigbugcc/OpenWrts?style=flat-square
-[forks-url]: https://github.com/bigbugcc/OpenWrts/network/members
-[stars-shield]: https://img.shields.io/github/stars/bigbugcc/OpenWrts?style=flat-square
-[stars-url]: https://github.com/bigbugcc/OpenWrts/stargazers
-[issues-shield]: https://img.shields.io/github/issues/bigbugcc/OpenWrts?style=flat-square
+[your-project-path]:https://github.com/ttfeeac/OpenWrts/
+[contributors-shield]: https://img.shields.io/github/contributors/ttfeeac/OpenWrts?style=flat-square
+[contributors-url]: https://github.com/ttfeeac/OpenWrts/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ttfeeac/OpenWrts?style=flat-square
+[forks-url]: https://github.com/ttfeeac/OpenWrts/network/members
+[stars-shield]: https://img.shields.io/github/stars/ttfeeac/OpenWrts?style=flat-square
+[stars-url]: https://github.com/ttfeeac/OpenWrts/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ttfeeac/OpenWrts?style=flat-square
 [issues-url]: https://img.shields.io/github/issues/bigbugcc/OpenWrts
 [license-shield]: https://img.shields.io/github/license/bigbugcc/OpenWrts?style=flat-square
 [license-url]: https://github.com/bigbugcc/OpenWrts/blob/master/LICENSE
