@@ -123,10 +123,7 @@ Standard.conf / Lite.conf - 主要用于配置固件插件应用
 
 ## 项目支持
 - [bigbugcc/OpenWrts](https://github.com/bigbugcc/OpenWrts/)
-- [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 - [openwrt/openwrt](https://github.com/openwrt/openwrt)
-- [luci-theme-argon](https://github.com/jerrykuku/luci-theme-argon)
-- [istore](https://github.com/linkease/istore)
 
 ## Stargazers over time
 [![Stargazers over time](https://starchart.cc/bigbugcc/OpenWrts.svg)](https://starchart.cc/bigbugcc/OpenWrts)
