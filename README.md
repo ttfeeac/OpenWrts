@@ -1,12 +1,6 @@
 # Action Openwrt 云自动编译
 ⏰ **每周自动拉取最新源码自动编译**
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
 <br />
 
 <p align="center">
