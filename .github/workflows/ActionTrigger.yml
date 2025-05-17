@@ -17,8 +17,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
-    - name: AutoTrigger
-      uses: bigbugcc/ActionBot@main
+    #- name: AutoTrigger
+    #  uses: bigbugcc/ActionBot@main
 
     - name: Delete workflow runs
       uses: bigbugcc/delete-workflow-runs@main
